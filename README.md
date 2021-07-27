@@ -36,7 +36,8 @@ Space traveling é um blog onde é possível visualizar posts e navegar entre el
 - Inicie a build de páginas estáticas do next com `yarn build`
 - Inicie a aplicação com `yarn dev`
 
-Não esqueça de criar o arquivo .env.local conforme abaixo:
+Não esqueça de criar o arquivo .env.local com a chave conforme abaixo:
+
 ```PRISMIC_API_ENDPOINT=XXXXXX```
 
 Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
