@@ -1,68 +1,72 @@
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
+.wrapper {
   padding: 0 2rem;
 }
 
-.posts {
-  margin: 5rem auto 0;
+.post {
+  strong {
+    font-size: 2.8rem;
+    color: var(--white);
 
-  a {
-    display: block;
-
-    & + a {
-      margin-top: 1rem;
-      padding-top: 1rem;
-    }
-
-    strong {
-      display: block;
-      font-size: 1.75rem;
-      margin-top: 1rem;
-      line-height: 2rem;
-      transition: color 0.2s;
-      font-weight: 700;
-    }
-
-    p {
-      color: var(--body);
-      margin-top: 0.5rem;
-      line-height: 1.625rem;
-      font-size: 1.25rem;
-    }
-
-    &:hover strong {
+    &:hover {
       color: var(--highlight);
     }
   }
 
-  .info {
+  p {
+    margin-top: 0.8rem;
+    font-size: 1.8rem;
+    color: var(--gray-200);
+  }
+
+  div {
     display: flex;
-    padding-top: 1rem;
-    gap: 3rem;
+    align-items: center;
+    margin-top: 2.4rem;
 
-    p {
-      font-size: 1rem;
+    time {
+      display: flex;
       align-items: center;
-      font-weight: 400;
-      color: var(--info);
+      font-size: 1.4rem;
+      color: var(--gray-300);
+
+      svg {
+        margin-right: 0.8rem;
+      }
     }
 
-    .icon {
-      margin-right: 1rem;
+    span {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      margin-left: 2.4rem;
+      color: var(--gray-300);
+
+      svg {
+        margin-right: 0.8rem;
+      }
     }
+  }
+
+  & + & {
+    margin-top: 4.8rem;
   }
 }
 
-.link {
-  padding-top: 3rem;
-  display: block;
+.loadMore {
+  margin-top: 6.4rem;
 
-  color: var(--highlight);
+  background: transparent;
+  border: none;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.178rem;
+
+  color: var(--pink-500);
 
   transition: filter 0.2s;
+
   &:hover {
     filter: brightness(0.8);
-    cursor:pointer;
   }
 }
